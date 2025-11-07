@@ -117,12 +117,10 @@
 
         <!-- 
             Der vCard-Download-Link.
-            Die vCard-Daten sind Base64-kodiert und direkt im 'href' eingebettet (Data URI).
-            Es ist keine separate .vcf-Datei nötig.
-            Der 'download'-Attribut legt den Dateinamen fest, den der Browser vorschlägt.
+            Geändert von Base64-Data-URI zu einem direkten Dateilink.
+            Das ist 100% robust und funktioniert auf allen Geräten.
         -->
-        <a href="data:text/vcard;charset=utf-8;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpSRVY6MjAyNS0xMS0wNlQwMDowMDowMFoNCk46TXV0O0FsZXhhbmRlcjs7Ow0KT1JHOiBhYmNmaW5hbmNlIGFkdmlzZSBHbWJIDQpUSVRMRTpGaW5hbnppZXJ1bmcsIExlYXNpbmcsIEZhY3RvcmluZw0KVEVMO1dPUks6MDA0OTE3MTU1MjgxODcNClRFTDtIT01FOmMwMDQ5MTUxNTEwMDI3NjcNCkVNQUlMO0lOVEVSTkFUO1dPUks6QWxleGFuZGVyLk11dEBhYmNmaW5hbmNlLmRlDQpFTUFJTDtJTlRFUk5FVDtIT01FOm11dGFsZXhAZ21haWwuY29tDQpVUkw7SE9NRTpodHRwczovL2FsZXhhbmRlcm11dC5kZQ0KVVJMO0hPTUU6aHR0cHM6Ly92Y2FyZGFibGV4YW5kZXJtdXQuZGUNCkFEUjtQT1NUSEFMOlBvc3RhZHJlc3NlOiBhYmNmaW5hbmNlIGFkdmlzZSBHbWJIIFMuIEJ1SNoIDs7QnV0endlaWxlcnN0cmFzc2UgMzUtMzk7S29lbG47OzUwODI5IDtEZXV0c2NobGFuZA0KQURSO1dPUks6UmVjaG51bmdzYWRyZXNzZTogYWJjZmluYW5jZSBHbWJIOzstS2FtZWtlc3RyYXNzZSAyLTg7S29lbG47OzUwNjcyIDtEZXV0c2NobGFuZA0KQURSO09USEVSOkdlc2NoYWVmdHN0ZWxsZTogYWJjZmluYW5jZSBhZHZpc2UgR21iSCBIYW1burg7O0JyYW1mZWxkZXIgU3RyYXNzZSAxMTBhO0hhbWJ1cmc7OzIyMzA1IDtEZXV0c2NobGFuZA0KRU5EOlZDQVJEDQo=" 
-           download="Alexander Mut (abcfinance advise).vcf" 
+        <a href="vcard_alexander_mut.vcf" 
            class="button">
             Kontakt im Handy speichern
         </a>
