@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Mut - Kontaktdaten</title>
+    <style>
+        :root {
+            /* Farbschema angepasst an das Dark-Mode-Beispiel (vcard.abcfinance.de)
+               --primary-color ist das "abc-grün"
+            */
+            --primary-color: #E0E0E0; /* "abc-grün" für Akzente */
+            --background-color: #1A1A1A; /* Dunkler Seitenhintergrund */
+            --card-background: #2A2A2A;  /* Dunkler Kartenhintergrund */
+            --text-color: #E0E0E0;      /* Heller Text (fast weiß) */
+            --subtext-color: #AAAAAA;   /* Hellerer, grauer Text */
+            --button-text-color: #1A1A1A; /* Dunkler Text für den grünen Button */
+            --border-color: #333333;   /* Dunkle Trennlinien */
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 40px 50px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            color: var(--primary-color); /* Name in "abc-grün" */
+        }
+
+        .title {
+            font-size: 1.1em;
+            color: var(--subtext-color);
+            margin-bottom: 5px;
+        }
+
+        .org {
+            font-size: 1.1em;
+            color: var(--text-color);
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            background-color: var(--primary-color); /* Button in "abc-grün" */
+            color: var(--button-text-color); /* Dunkler Text auf grünem Button */
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600; /* Etwas dickerer Text */
+            text-align: center;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-sizing: border-box; /* Wichtig für 100% Breite mit Padding */
+        }
+
+        .button:hover {
+            background-color: #ffffff; /* Helleres grün beim Hover */
+            transform: translateY(-1px);
+        }
+        
+        .button:active {
+            transform: translateY(1px);
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color); /* Dunkle Trennlinie */
+            font-size: 0.9em;
+            color: var(--subtext-color); /* Helleres Grau */
+        }
+
+        footer a {
+            color: var(--subtext-color); /* Helleres Grau */
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        
+        <h1>Alexander Mut</h1>
+        <p class="title">Finanzierung, Leasing, Factoring</p>
+        <p class="org">abcfinance GmbH</p>
+
+        <!-- 
+            Der vCard-Download-Link.
+            Die vCard-Daten sind Base64-kodiert und direkt im 'href' eingebettet (Data URI).
+            Es ist keine separate .vcf-Datei nötig.
+            Der 'download'-Attribut legt den Dateinamen fest, den der Browser vorschlägt.
+        -->
+        <a href="data:text/vcard;charset=utf-8;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpSRVY6MjAyNS0xMS0wNlQwMDowMDowMFoNCk46TXV0O0FsZXhhbmRlcjs7Ow0KT1JHOiBhYmNmaW5hbmNlIGFkdmlzZSBHbWJIDQpUSVRMRTpGaW5hbnppZXJ1bmcsIExlYXNpbmcsIEZhY3RvcmluZw0KVEVMO1dPUks6MDA0OTE3MTU1MjgxODcNClRFTDtIT01FOmMwMDQ5MTUxNTEwMDI3NjcNCkVNQUlMO0lOVEVSTkFUO1dPUks6QWxleGFuZGVyLk11dEBhYmNmaW5hbmNlLmRlDQpFTUFJTDtJTlRFUk5FVDtIT01FOm11dGFsZXhAZ21haWwuY29tDQpVUkw7SE9NRTpodHRwczovL2FsZXhhbmRlcm11dC5kZQ0KVVJMO0hPTUU6aHR0cHM6Ly92Y2FyZGFibGV4YW5kZXJtdXQuZGUNCkFEUjtQT1NUSEFMOlBvc3RhZHJlc3NlOiBhYmNmaW5hbmNlIGFkdmlzZSBHbWJIIFMuIEJ1SNoIDs7QnV0endlaWxlcnN0cmFzc2UgMzUtMzk7S29lbG47OzUwODI5IDtEZXV0c2NobGFuZA0KQURSO1dPUks6UmVjaG51bmdzYWRyZXNzZTogYWJjZmluYW5jZSBHbWJIOzstS2FtZWtlc3RyYXNzZSAyLTg7S29lbG47OzUwNjcyIDtEZXV0c2NobGFuZA0KQURSO09USEVSOkdlc2NoYWVmdHN0ZWxsZTogYWJjZmluYW5jZSBhZHZpc2UgR21iSCBIYW1burg7O0JyYW1mZWxkZXIgU3RyYXNzZSAxMTBhO0hhbWJ1cmc7OzIyMzA1IDtEZXV0c2NobGFuZA0KRU5EOlZDQVJEDQo=" 
+           download="Alexander Mut (abcfinance advise).vcf" 
+           class="button">
+            Kontakt im Handy speichern
+        </a>
+
+        <footer>
+            <a href="impressum.html">Impressum</a> |
+            <a href="datenschutz.html">Datenschutz</a>
+        </footer>
+    </main>
+
+</body>
+</html>
